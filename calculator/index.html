@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <div class="container mt-5">
+        <div class="calculator">
+            <input type="text" class="form-control mb-2" id="display" readonly>
+            <div class="row">
+                <div class="col-md-3">
+                    <button class="btn btn-primary btn-block" onclick="addToDisplay('1')">1</button>
+                </div>
+                <!-- More number buttons -->
+                <div class="col-md-3">
+                    <button class="btn btn-primary btn-block" onclick="addToDisplay('+')">+</button>
+                </div>
+                <!-- More operation buttons -->
+                <div class="col-md-3">
+                    <button class="btn btn-success btn-block" onclick="calculate()">=</button>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-3">
+                    <button class="btn btn-secondary btn-block" onclick="addToMemory()">M+</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary btn-block" onclick="subtractFromMemory()">M-</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary btn-block" onclick="clearMemory()">MC</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
